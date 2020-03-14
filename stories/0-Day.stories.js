@@ -7,7 +7,7 @@ export default {
 
 export const toStorybook = () => ({
   components: { Day },
-  template: '<day> </day>',
+  template: '<day id="1"> </day>',
 });
 
 toStorybook.story = {

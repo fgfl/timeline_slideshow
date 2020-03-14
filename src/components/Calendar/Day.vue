@@ -1,9 +1,21 @@
 <template>
-  <div id="day"><p>test</p></div>
+  <div v-bind:id="id">
+    <p>{{ message }}</p>
+  </div>
 </template>
 
 <script>
-export default { name: 'Day' };
+export default {
+  name: 'Day',
+  props: {
+    id: Number,
+  },
+  data: function() {
+    return {
+      message: 'test',
+    };
+  },
+};
 </script>
 
 <style scoped>
